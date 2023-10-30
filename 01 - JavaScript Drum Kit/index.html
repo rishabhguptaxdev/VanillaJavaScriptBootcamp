@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body background="background.jpg">
+    <audio id="65">
+      <source src="sounds/boom.wav" />
+    </audio>
+    <audio id="83">
+      <source src="sounds/clap.wav" />
+    </audio>
+    <audio id="68">
+      <source src="sounds/hihat.wav" />
+    </audio>
+    <audio id="70">
+      <source src="sounds/kick.wav" />
+    </audio>
+    <audio id="71">
+      <source src="sounds/openhat.wav" />
+    </audio>
+    <audio id="72">
+      <source src="sounds/ride.wav" />
+    </audio>
+    <audio id="74">
+      <source src="sounds/snare.wav" />
+    </audio>
+    <audio id="75">
+      <source src="sounds/tink.wav" />
+    </audio>
+    <audio id="76">
+      <source src="sounds/tom.wav" />
+    </audio>
+
+    <div class="container outer">
+      <button type="button" class="btn btn-outline-primary 65">A</button>
+      <button type="button" class="btn btn-outline-secondary 83">S</button>
+      <button type="button" class="btn btn-outline-success 68">D</button>
+      <button type="button" class="btn btn-outline-danger 70">F</button>
+      <button type="button" class="btn btn-outline-warning 71">G</button>
+      <button type="button" class="btn btn-outline-info 72">H</button>
+      <button type="button" class="btn btn-outline-light 74">J</button>
+      <button type="button" class="btn btn-outline-dark 75">K</button>
+      <button type="button" class="btn btn-outline-success 76">L</button>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -10,11 +10,33 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="text-center p-4">Image search application</h1>
+    <div class="row container">
+      <h1 class="text-center p-3">Image search application</h1>
+
+      <div class="main">
+        <div class="searchbar p-3">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="keyword"
+            />
+            <button class="btn btn-outline-success" onclick="searchImages()">
+              Search
+            </button>
+          </form>
+          <div id="photos" class="p-3"></div>
+        </div>
+        <div class="pagination">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination" id="pager"></ul>
+          </nav>
+        </div>
+      </div>
     </div>
     <script src="index.js"></script>
     <script
